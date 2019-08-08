@@ -1,0 +1,61 @@
+/**
+ * TEALS reveal.js theme
+ *
+ * Refer to LICENSE for copyright information.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../../../../revealjs/css/theme/template/mixins";
+@import "../../../../revealjs/css/theme/template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+
+// Copied from https://fonts.googleapis.com/css?family=Open+Sans:&display=swap for offline access
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+}
+
+
+// Override theme settings (see ../../../../revealjs/css/theme/template/settings.scss)
+$mainFont: 'Segoe UI', 'Open Sans', sans-serif;
+$mainColor: #fff;
+$headingFont: 'Segoe UI', 'Open Sans', sans-serif;
+$headingColor: #fff;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #258b7c;
+$linkColor: #fff;
+$linkColorHover: darken($linkColor, 40%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+// Theme template ------------------------------
+@import "../../../../revealjs/css/theme/template/theme";
+// ---------------------------------------------
