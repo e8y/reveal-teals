@@ -1,32 +1,32 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>TEALS reveal.js Template</title>
+        <title>TEALS reveal.js Template</title>
 
-		<link rel="stylesheet" href="revealjs/css/reset.css">
-		<link rel="stylesheet" href="revealjs/css/reveal.css">
-		<link rel="stylesheet" href="teals/css/theme/teals.css">
+        <link rel="stylesheet" href="revealjs/css/reset.css">
+        <link rel="stylesheet" href="revealjs/css/reveal.css">
+        <link rel="stylesheet" href="teals/css/theme/teals.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="revealjs/lib/css/monokai.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="highlightjs/src/styles/vs.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
                 <!-- TITLE SLIDE -->
-				<section>
+                <section>
                     <h1>Lesson Name</h1>
                     <h3>Short description of the lesson</h3>
                     <p>
@@ -55,7 +55,7 @@
                 </section>
                 
                 <!-- SWBAT -->
-				<section>
+                <section>
                     <h2>Students will be able to...</h2>
                     <ul>
                         <li>Do this</li>
@@ -78,6 +78,10 @@
                     <p>
                         <i>Lorem ipsum dolor...</i>
                     </p>
+                    <pre><code class="hljs py">
+name = 'World'
+print ('Hello,' name)
+                    </code></pre>
                 </section>
 
                 <!-- WRAP UP -->
@@ -89,11 +93,11 @@
                 </section>
 
                 <!-- End of presentation -->
-			</div>
-		</div>
+            </div>
+        </div>
 
-		<script src="revealjs/js/reveal.js"></script>
+        <script src="revealjs/js/reveal.js"></script>
         <script src="teals/js/teals.js"></script>
-	</body>
+    </body>
 </html>
 
