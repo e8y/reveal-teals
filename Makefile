@@ -1,5 +1,9 @@
 VERSION ?= devel
 
+SUBMODULES = \
+	revealjs \
+	highlightjs
+
 FILES = \
 	teals/css/theme/*.css \
 	teals/js/* \
@@ -19,7 +23,9 @@ RELEASEDIR = reveal-teals-$(VERSION)
 
 all: submodules release
 
-submodules: revealjs/.git highlightjs/.git
+submodules: $(addsuffix /.git,$(SUBMODULES))
+
+%/.git:
 	git submodule update --init
 
 release: $(RELEASEDIR).tar.gz $(RELEASEDIR).zip
