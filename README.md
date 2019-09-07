@@ -89,3 +89,13 @@ In addition to the basic functionality from `reveal.js`, this framework provides
 * Countdown timer embedded in the slide (e.g. for Do Now activities) -- **in progress**
 * Embedding Snap<em>!</em> in the slides, interactively!
 * Displaying code in slides with syntax highlighting
+* Embedding media such as images, GIFs, and videos
+
+Future planned features:
+
+* Embedding interactive Python / Java interpreter
+* Randomly select student/group and display in the slide (cold call plugin)
+
+# Feedback and Issues
+
+Please submit an issue [here](https://github.com/tomocafe/reveal-teals/issues/new). Pull requests are also welcomed.

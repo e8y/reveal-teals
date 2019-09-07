@@ -1,0 +1,174 @@
+<!--
+This is a local presentation. For it to render properly, this file must be
+placed into the reveal-teals root directory, with all the library files present.
+If you downloaded a release archive, place this file in the top level directory
+after extracting the archive.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Demo Presentation</title>
+
+        <link rel="stylesheet" href="revealjs/css/reset.css">
+        <link rel="stylesheet" href="revealjs/css/reveal.css">
+        <link rel="stylesheet" href="teals/css/theme/teals.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="highlightjs/src/styles/vs.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- TITLE SLIDE -->
+                <section>
+                    <h2>Demo Lesson</h2>
+                    <h4>Demonstration of reveal-teals features</h4>
+                    <p>
+                        <a href='https://github.com/tomocafe/reveal-teals'></a>
+                    </p>
+                </section>
+                
+                <!-- BELL WORK -->
+                <section>
+                    <!-- These are vertical slides -->
+                    <section>
+                        <h2>Bell Work</h2>
+                        <p>
+                            In Snap<em>!</em>, there are two blocks that can be used to allow sprites to interact with each other. Can you find them? What are they called?
+                        </p>
+                        <p>
+                            <!-- The timer will start as soon as this slide is displayed -->
+                            Let's regroup in <span class='countdown'>4:00</span>. <!-- TODO: countdown timer -->
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Bell Work</h2>
+                        <!-- Unordered list -->
+                        <ul>
+                            <li><code>broadcast</code></li>
+                            <li><code>when I receive</code></li>
+                        </ul>
+                        <p>
+                            <!-- Embedding images -->
+                            <img class='plain' src='https://raw.githubusercontent.com/TEALSK12/introduction-to-computer-science/master/broadcast.png'>
+                            <img class='plain' src='https://raw.githubusercontent.com/TEALSK12/introduction-to-computer-science/master/whenIReceive.png'>
+                            <!-- You can download these locally for offline use -->
+                        </p>
+                    </section>
+                </section>
+                
+                <!-- SWBAT -->
+                <section>
+                    <h2>Learning Objectives</h2>
+                    <!-- Ordered list -->
+                    <ol>
+                        <li>Animate Snap<em>!</em> sprites using costume changes and movement</li>
+                        <li>Trigger action in other sprites using broadcasts</li>
+                    </ol>
+                </section>
+                
+                <!-- HOOK -->
+                <section>
+                    <h2>More about <code>reveal.js</code></h2>
+                    <!-- Here we are showing a YouTube video as our hook -->
+                    <iframe width="875" height="492" src="https://www.youtube.com/embed/hNEySwwXikU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                
+                <!-- LECTURE SLIDES -->
+                <section>
+                    <h2>Navigating</h2>
+                    <p>Press <kbd>Space</kbd> to go to the next slide (or fragment)</p>
+                    <p>Or use the arrow keys</p>
+                    <p>Press <kbd>Escape</kbd> to toggle slide overview</p>
+                    <p>Press <kbd>s</kbd> to toggle speaker view</p>
+                    <p>Press <kdb>.</kdb> to pause the presentation</p>
+                </section>
+
+                <section id="fragments">
+                    <!-- Note the id="fragments" above -->
+                    <h2>Animated slides</h2>
+                    <h4>(<code>fragments</code>)</h4>
+                    <p>Here is the truth table for AND:</p>
+                    <table>
+                            <thead>
+                                <tr><th>P</th><th>Q</th><th>P AND Q</th></tr>
+                            </thead>
+                            <tbody>
+                                <!-- Note the class="fragment" below -->
+                                <tr><th><span style="color:#eaa">false</span></th><th><span style="color:#eaa">false</span></th><th class="fragment"><span style="color:#eaa">false</span></th></tr>
+                                <tr><th><span style="color:#eaa">false</span></th><th><span style="color:#ace">true</span></th><th class="fragment"><span style="color:#eaa">false</span></th></tr>
+                                <tr><th><span style="color:#ace">true</span></th><th><span style="color:#eaa">false</span></th><th class="fragment"><span style="color:#eaa">false</span></th></tr>
+                                <tr><th><span style="color:#ace">true</span></th><th><span style="color:#ace">true</span></th><th class="fragment"><span style="color:#ace">true</span></th></tr>
+                            </tbody>
+                        </table>
+                </section>
+
+                <section>
+                    <h2>Static code</h2>
+                    <h4>with highlighting</h4>
+                    <!-- Specify the language with class="hljs py" (for Python), or  class="hljs java" (for Java) -->
+                    <pre><code class="hljs py">
+name = 'World'
+print ('Hello,' name)
+                    </code></pre>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Embedding Snap<em>!</em></h2>
+                        <p>The next slide (below) is a fullscreen Snap<em>!</em> workspace</p>
+                    </section>
+                    <!-- Using Snap! as the background of the next slide, making it "full screen" -->
+                    <section data-background-iframe="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=sandbox" data-background-interactive>
+                        <!-- Leave this slide blank since the background is the embedded Snap! workspace -->
+                    </section>
+                    <section>
+                        <h2>Embedding Snap<em>!</em></h2>
+                        <p>In this slide we embed a Snap<em>!</em> workspace as only part of the slide</p>
+                        <iframe src="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=sandbox" width="800" height="500"></iframe>
+                    </section>
+                    <section>
+                        <h2>Embedding Snap<em>!</em></h2>
+                        <p>In this slide we embed only the Snap<em>!</em> stage to showcase a finished product</p>
+                        <iframe src="https://snap.berkeley.edu/embed?project=nested_booleans&user=mr_wegley&showTitle=true&showAuthor=true&editButton=true&pauseButton=true" width="800" height="500"></iframe>
+                        <!-- This could also be made into a slide background as above -->
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Embedding GIFs</h2>
+                    <img height=180 data-src="https://media1.tenor.com/images/a69d18f3d91738c60be155208a492def/tenor.gif?itemid=12248001">
+                </section>
+
+                <!-- WRAP UP -->
+                <section>
+                    <h2>Exit Ticket</h2>
+                    <p>
+                        Check out the <code>reveal.js</code> demo <a href='https://revealjs.com/#/'>here</a>
+                    </p>
+                    <p>
+                        Submit an issue <a href='https://github.com/tomocafe/reveal-teals/issues/new'>here</a> if you encountered a problem with this presentation!
+                    </p>
+                </section>
+
+                <!-- End of presentation -->
+            </div>
+        </div>
+
+        <script src="revealjs/js/reveal.js"></script>
+        <script src="teals/js/teals.js"></script>
+    </body>
+</html>
+
