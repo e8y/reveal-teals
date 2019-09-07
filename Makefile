@@ -15,7 +15,8 @@ FILES = \
 	revealjs/LICENSE \
 	highlightjs/src/styles/vs.css \
 	highlightjs/LICENSE \
-	template.html \
+	template-*.html \
+	demo.html \
 	README.md \
 	LICENSE
 
