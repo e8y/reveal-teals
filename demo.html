@@ -100,6 +100,19 @@ after extracting the archive.
                     <!-- Note the id="fragments" above -->
                     <h2>Animated slides</h2>
                     <h4>(<code>fragments</code>)</h4>
+                    <p>You can make things appear...</p>
+                    <p class="fragment">one after another!</p>
+                    <ul>
+                        <li class="fragment">Even in...</li>
+                        <li class="fragment">lists</li>
+                    </ul>
+                    <p><span class="fragment">and even</span><span class="fragment"> mid sentence.</span></p>
+                </section>
+
+                <section id="fragments">
+                    <!-- Note the id="fragments" above -->
+                    <h2>Animated slides</h2>
+                    <h4>(<code>fragments</code>)</h4>
                     <p>Here is the truth table for AND:</p>
                     <table>
                             <thead>
@@ -116,40 +129,81 @@ after extracting the archive.
                 </section>
 
                 <section>
-                    <h2>Static code</h2>
-                    <h4>with highlighting</h4>
-                    <!-- Specify the language with class="hljs py" (for Python), or  class="hljs java" (for Java) -->
-                    <pre><code class="hljs py">
-name = 'World'
-print ('Hello,' name)
-                    </code></pre>
+                    <section id="fragments">
+                        <h2>Embedding Snap<em>!</em></h2>
+                        <p>The next slide (below) is a fullscreen Snap<em>!</em> workspace</p>
+                        <small class="fragment">You won't be able to use arrow/space keys to change slides when Snap<em>!</em> is fullscreen. Click the buttons in the lower right corner to proceed.</small>
+                    </section>
+                    <!-- Using Snap! as the background of the next slide, making it "full screen" -->
+                    <section data-background-iframe="https://snap.berkeley.edu/snap/snap.html#present:Username=mr_wegley&ProjectName=kaleidoscope" data-background-interactive>
+                        <!-- Leave this slide blank since the background is the embedded Snap! workspace -->
+                    </section>
                 </section>
-
+                <section>
+                    <section id="fragments">
+                        <h2>Embedding Snap<em>!</em></h2>
+                        <p>You can immediately display the script area by appending <code>&editMode</code> to the project URL</p>
+                        <p class="fragment">Similarly append <code>&noRun</code> to make it <em>not</em> run automatically</p>
+                    </section>
+                    <section data-background-iframe="https://snap.berkeley.edu/snap/snap.html#present:Username=mr_wegley&ProjectName=kaleidoscope&editMode&noRun" data-background-interactive></section>
+                </section>
                 <section>
                     <section>
                         <h2>Embedding Snap<em>!</em></h2>
-                        <p>The next slide (below) is a fullscreen Snap<em>!</em> workspace</p>
-                    </section>
-                    <!-- Using Snap! as the background of the next slide, making it "full screen" -->
-                    <section data-background-iframe="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=sandbox" data-background-interactive>
-                        <!-- Leave this slide blank since the background is the embedded Snap! workspace -->
-                    </section>
-                    <section>
-                        <h2>Embedding Snap<em>!</em></h2>
-                        <p>In this slide we embed a Snap<em>!</em> workspace as only part of the slide</p>
-                        <iframe src="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=sandbox" width="800" height="500"></iframe>
-                    </section>
-                    <section>
-                        <h2>Embedding Snap<em>!</em></h2>
-                        <p>In this slide we embed only the Snap<em>!</em> stage to showcase a finished product</p>
-                        <iframe src="https://snap.berkeley.edu/embed?project=nested_booleans&user=mr_wegley&showTitle=true&showAuthor=true&editButton=true&pauseButton=true" width="800" height="500"></iframe>
+                        <p>In this slide we embed only the Snap<em>!</em> stage as an <code>iframe</code> to showcase a finished product</p>
+                        <iframe src="https://snap.berkeley.edu/embed?project=kaleidoscope&user=mr_wegley&showTitle=true&showAuthor=true&editButton=true&pauseButton=true" width="800" height="500"></iframe>
                         <!-- This could also be made into a slide background as above -->
                     </section>
                 </section>
 
                 <section>
-                    <h2>Embedding GIFs</h2>
+                    <h2>Static code</h2>
+                    <h4>with highlighting</h4>
+                    <!-- Specify the language with class="hljs py" (for Python), or  class="hljs java" (for Java) -->
+                    <pre><code class="hljs py">
+name = 'World'
+print('Hello,' name)
+                    </code></pre>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Embedding Repl.it</h2>
+                        <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@MrWegleyIntro/helloworld?lite=true"></iframe>
+                    </section>
+                    <section>
+                        <h2>Embedding Repl.it</h2>
+                        <p>Show the output only by appending <code>&outputonly=1</code> to the URL</p>
+                        <iframe frameborder="0" width="100%" height="240px" src="https://repl.it/@MrWegleyIntro/helloworld?lite=true&outputonly=1"></iframe>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Embedding Images</h2>
+                    <p>Supports static images and GIFs</p>
                     <img height=180 data-src="https://media1.tenor.com/images/a69d18f3d91738c60be155208a492def/tenor.gif?itemid=12248001">
+                </section>
+                <section>
+                    <h2>First Computers</h2>
+                    <div class="fragment">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Katherine_Johnson_at_NASA%2C_in_1966.jpg/381px-Katherine_Johnson_at_NASA%2C_in_1966.jpg'><br>
+                        <small>Katherine Johnson</small>
+                    </div>
+                    <!-- Check out these notes in the Speaker View (press S) -->
+                    <aside class='notes'>
+                        Can you imagine what the first computer looks like?
+                    </aside>
+                </section>
+                <section data-background='https://cdn.britannica.com/72/194172-050-1F999A0B/Katherine-Johnson.jpg'>
+                    <blockquote>
+Johnson, Vaughan, and Jackson all began their careers at the National Advisory Committee for Aeronautics (NACA)—which later became NASA—working as “computers.” Computers were not what we think of them today. They were people, primarily women, who reduced or analyzed data using mechanical calculators.
+                    </blockquote>
+                    <small>
+                        Smithsonian National Air and Space Museum
+                    </small>
+                    <aside class='notes'>
+                        Katherine Johnson calculated the trajectory for America's first human spaceflight (flown by Alan Shephard)
+                    </aside>
                 </section>
 
                 <!-- WRAP UP -->

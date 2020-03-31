@@ -86,15 +86,10 @@ The [`reveal-js`](https://github.com/hakimel/reveal.js) documentation is even mo
 
 In addition to the basic functionality from `reveal.js`, this framework provides support for:
 
-* Countdown timer embedded in the slide (e.g. for Do Now activities) -- **in progress**
-* Embedding Snap<em>!</em> in the slides, interactively!
+* Embedding Snap<em>!</em> and Repl.it in the slides, interactively!
 * Displaying code in slides with syntax highlighting
 * Embedding media such as images, GIFs, and videos
-
-Future planned features:
-
-* Embedding interactive Python / Java interpreter
-* Randomly select student/group and display in the slide (cold call plugin)
+* Countdown timer embedded in the slide (e.g. for Do Now activities) -- **in progress**
 
 # Feedback and Issues
 
