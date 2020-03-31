@@ -41,11 +41,11 @@
 // Override theme settings (see ../../../../revealjs/css/theme/template/settings.scss)
 $mainFont: 'Segoe UI', 'Open Sans', sans-serif;
 $mainColor: #fff;
-$headingFont: 'Segoe UI', 'Open Sans', sans-serif;
-$headingColor: #fff;
+$headingFont: 'Segoe UI Semibold', 'Open Sans Bold', sans-serif;
+$headingColor: #30e5d0;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: #258b7c;
+$backgroundColor: #274b47;
 $linkColor: #fff;
 $linkColorHover: darken($linkColor, 40%);
 $selectionBackgroundColor: lighten($linkColor, 25%);
