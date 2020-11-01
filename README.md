@@ -8,7 +8,7 @@ This framework is not officially supported or endorsed by TEALS. As of now, it i
 
 This framework allows you to create presentation slides for lessons with a single HTML file that can be rendered in your web browser.
 
-### [Here is a live demo](https://tomocafe.github.io/reveal-teals/demo.html)
+### [Here is a live demo](https://e8y.github.io/reveal-teals/demo.html)
 
 # Getting Started
 
@@ -18,7 +18,7 @@ Template HTML files are provided for you to add your content into. Based on your
 
 Use the template file `template-standalone.html`.
 
-You can [download](https://tomocafe.github.io/reveal-teals/template-standalone.html) and copy this file anywhere, then add your content without any additional setup. To present the slides, simply open the file in your web browser.
+You can [download](https://e8y.github.io/reveal-teals/template-standalone.html) and copy this file anywhere, then add your content without any additional setup. To present the slides, simply open the file in your web browser.
 
 **_I want my presentation to be able to render offline, but I understand I must also include the necessary `reveal-teals` files, with the right file structure._**  
 _OR_  
@@ -26,7 +26,7 @@ _OR_
 
 Use the template file `template-local.html`.
 
-First download the latest release [here](https://github.com/tomocafe/reveal-teals/releases). Once extracted, it will contain the template file, which you can copy and modify. The presentation HTML files must be located in the root `reveal-teals` directory for the browser to render the slides correctly.
+First download the latest release [here](https://github.com/e8y/reveal-teals/releases). Once extracted, it will contain the template file, which you can copy and modify. The presentation HTML files must be located in the root `reveal-teals` directory for the browser to render the slides correctly.
 
 If you prefer to clone the GitHub repository, you can do so instead of downloading a release archive. After cloning the repository, run `make submodules` to fetch all the dependencies.
 
@@ -78,7 +78,7 @@ You can animate certain parts of the slide to appear one after the other like th
 </section>
 ```
 
-The [demo slides](https://tomocafe.github.io/reveal-teals/demo.html) give a demonstration of most available features (images, code, embedding Snap<em>!</em>, etc.). View its source code [here](https://github.com/tomocafe/reveal-teals/blob/master/demo.html).
+The [demo slides](https://e8y.github.io/reveal-teals/demo.html) give a demonstration of most available features (images, code, embedding Snap<em>!</em>, etc.). View its source code [here](https://github.com/e8y/reveal-teals/blob/master/demo.html).
 
 The [`reveal-js`](https://github.com/hakimel/reveal.js) documentation is even more comprehensive.
 
@@ -93,4 +93,4 @@ In addition to the basic functionality from `reveal.js`, this framework provides
 
 # Feedback and Issues
 
-Please submit an issue [here](https://github.com/tomocafe/reveal-teals/issues/new). Pull requests are also welcomed.
+Please submit an issue [here](https://github.com/e8y/reveal-teals/issues/new). Pull requests are also welcomed.
